@@ -1,5 +1,5 @@
-/* slstatus & */
-/* ./.fehbg & */ 
-/* exec dwm */
+#!/bin/bash
+
 ./.start_dwm.sh
-/* exec gnome-session */
+
+# exec xfce4-session
