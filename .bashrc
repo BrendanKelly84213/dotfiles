@@ -114,3 +114,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# testing prompt 
+odps1="$PS1"
+export PS1="\e[0;37m[\u@\h \W]\$ \e[m"
+
