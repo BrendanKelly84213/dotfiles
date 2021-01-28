@@ -116,6 +116,10 @@ if ! shopt -oq posix; then
 fi
 
 # testing prompt 
-odps1="$PS1"
-export PS1="\e[0;37m[\u@\h \W]\$ \e[m"
+# oldps1="$PS1"
+# export PS1="\e[0;37m[\e[0;37m\u@\h \e[1;34m\W\e[0;37m]\$ \e[m"
+
+PS1='${debian_chroot:+($debian_chroot)}\[\033[0;37m\][\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]]\$ '
+
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;37m\]\u@\h\[\033[00m\]\[\033[01;34m\]\W\033[01;37m\]]\[\033[00m\]\$ '
 
